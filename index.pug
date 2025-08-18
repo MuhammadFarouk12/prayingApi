@@ -1,1 +1,20 @@
 doctype
+html
+  head
+    title Praying Times 
+    link(rel="stylesheet", href="style.css")
+  body
+    h1 Get Praying Times Anywhere 
+
+    .block
+      label.city_label Enter Your City Name
+      input.city  
+    .block
+      label.code_label Enter The Country Code
+      input.code
+    .show 
+      h3 Here is the praying times of 
+        span#show_city 
+        | and 
+      span#show_country 
+  script(src="app.js")
