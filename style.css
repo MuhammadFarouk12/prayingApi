@@ -8,6 +8,10 @@ h1 {
   text-align: center;
 }
 
+h3 {
+  text-align: center;
+}
+
 body {
   background-color: #E1DC9F;
 }
@@ -41,9 +45,22 @@ button {
   margin: 20px auto;
 }
 
+li {
+  list-style: none;
+}
+
 span {
   color: #991111;
   font-weight: bold;
+}
+
+.cell {
+  border: 3px solid #991111;
+  padding: 10px 20px;
+  display: inline-block;
+  margin: 10px -1px;
+  width: 50%;
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */
