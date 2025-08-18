@@ -7,15 +7,17 @@ html
     h1 Get Praying Times Anywhere 
 
     .block
-      label.city_label Enter Your City Name
+      label#city_label Enter Your City Name
       input#city  
     .block
-      label.code_label Enter The Country Code
+      label#code_label Enter The Country Code
       input#code
     .show 
       button#getTimes Get Times
       h3 Here is the praying times of 
-        span#show_city 
-        | and 
-      span#show_country 
+        span#show_city  ____________ 
+        | City, and 
+        span#show_country ______  
+        | country
+      ul#times_container
   script(src="app.js")

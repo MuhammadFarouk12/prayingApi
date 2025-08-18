@@ -7,16 +7,17 @@
   <body>
     <h1>Get Praying Times Anywhere </h1>
     <div class="block">
-      <label class="city_label">Enter Your City Name</label>
+      <label id="city_label">Enter Your City Name</label>
       <input id="city">
     </div>
     <div class="block">
-      <label class="code_label">Enter The Country Code</label>
+      <label id="code_label">Enter The Country Code</label>
       <input id="code">
     </div>
     <div class="show"> 
       <button id="getTimes">Get Times</button>
-      <h3>Here is the praying times of <span id="show_city"> </span>and </h3><span id="show_country"> </span>
+      <h3>Here is the praying times of <span id="show_city"> ____________ </span>City, and <span id="show_country">______  </span>country</h3>
+      <ul id="times_container"></ul>
     </div>
   </body>
   <script src="app.js"></script>

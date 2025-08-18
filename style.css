@@ -23,6 +23,9 @@ input {
   border: none;
   width: 100%;
 }
+input:focus {
+  outline: none;
+}
 
 label {
   display: block;
@@ -36,6 +39,11 @@ button {
   border-radius: 5px;
   width: max(220px, 100%);
   margin: 20px auto;
+}
+
+span {
+  color: #991111;
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=style.css.map */
