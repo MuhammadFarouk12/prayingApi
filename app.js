@@ -4,7 +4,7 @@ async function getTimes(city, countryCode, wantsAll){
   document.getElementById("show_city").innerText = city.toUpperCase() + " City "
   document.getElementById("show_country").innerText = countryCode.toUpperCase() + " Country"
   try {
-    const response = await fetch(`http://api.aladhan.com/v1/timingsByCity?city=${city}&country=${countryCode}`)
+    const response = await fetch(`https://api.aladhan.com/v1/timingsByCity?city=${city}&country=${countryCode}`)
     const parsedResponse = await response.json();
     const times = parsedResponse.data.timings
     let container = ""
