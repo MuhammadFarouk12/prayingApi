@@ -1,6 +1,6 @@
 # Prayer Times App
 
-A simple app to get Islamic prayer times by city and country using the [Aladhan API](https://aladhan.com/prayer-times-api).
+A simple app to get prayer times by city and country using the [Aladhan API](https://aladhan.com/prayer-times-api).
 
 ## Tech
 - **HTML**: `index.pug` → `index.html`
@@ -20,7 +20,7 @@ ___
 ___
 
 ## How to Run
-Just Click [**On This Link**](https://github.com/MuhammadFarouk12/prayingApi/deployments/github-pages)
+Just Click [**On This Link**](https://muhammadfarouk12.github.io/prayingApi/)
 ___
 
 ## Notes
