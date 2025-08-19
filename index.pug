@@ -12,6 +12,9 @@ html
     .block
       label#code_label Enter The Country Code
       input#code
+    .show_all
+      label(for="wantsAll") Do you want to show all times ? uncheck the box to get only the 5 prayings
+      input#wantsAll(type="checkbox", name="wantsAll")
     .show 
       button#getTimes Get Times
       h3 Here is the praying times of 

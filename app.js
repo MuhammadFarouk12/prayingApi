@@ -1,5 +1,5 @@
 city.focus();
-async function getTimes(city, countryCode){
+async function getTimes(city, countryCode, wantsAll){
   document.getElementById("city").focus()
   document.getElementById("show_city").innerText = city.toUpperCase() + " City "
   document.getElementById("show_country").innerText = countryCode.toUpperCase() + " Country"
@@ -8,8 +8,17 @@ async function getTimes(city, countryCode){
     const parsedResponse = await response.json();
     const times = parsedResponse.data.timings
     let container = ""
+    let current = 0
     for (const time in times) {
-      container += `<li><span class="cell">${time}</span><span class="cell">${times[time]}</span></li>`
+      if (wantsAll) {
+        container += `<li><span class="cell">${time}</span><span class="cell">${times[time]}</span></li>`
+      } else {
+        const fiveTimes = [0, 2, 3, 5, 6]
+        if(fiveTimes.includes(current)){
+          container += `<li><span class="cell">${time}</span><span class="cell">${times[time]}</span></li>`
+        }
+        current++
+      }
     }
     document.getElementById("times_container").innerHTML = container
   } catch(err){
@@ -17,4 +26,4 @@ async function getTimes(city, countryCode){
   }
 }
 
-document.getElementById("getTimes").onclick = ()=> getTimes(city.value, code.value)
+document.getElementById("getTimes").onclick = ()=> getTimes(city.value, code.value, document.getElementById("wantsAll").checked)
